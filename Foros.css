@@ -1,0 +1,189 @@
+
+/** Esto es para no afectar el tamano ni los bordes ni el relleno de cada elemento */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Roboto';
+    background-image: url(./fondo2.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.titulo {
+    color: rgb(183, 206, 55);
+    font-size: 5em;
+    font-family: 'Playfair Display', serif;
+    font-stretch: normal;
+    font-variant: small-caps;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+a {
+    color: rgb(59, 20, 90);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(20, 158, 182);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/**================== 
+Lista de comentarios
+===================*/
+
+.contenedor-comentarios {
+    width: 48em;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.contenedor-comentarios h1{
+    font-size: 2.25em;
+    font-weight: 400;
+}
+
+.comments-list {
+    margin-top: 1.87em;
+    position: relative;
+}
+
+.comments-list li {
+    margin-bottom: 0.93em;
+    display: nlock;
+    position: relative; 
+}
+
+
+/** limpieza de bloques con tecnica clean fixe */
+.comments-list li:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+/**=== 
+Avatar
+=====*/
+
+.comments-list .comment-avatar {
+    width: 4.06em;
+    height: 4.06em;
+    position: relative;
+    z-index: 99;
+    float: left;
+    border: 0.18em solid white;
+    border-radius: 0.25em;
+    box-shadow: 0.00625em 0.125em rgba(255, 255, 255, 0.233);
+    overflow: hidden;
+
+}
+
+.comments-list .comment-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/** 
+Caja de cometarios
+-------------------*/
+
+.comments-list .comment-box {
+    width: 42.5em;
+    float: right;
+    position: relative;
+    box-shadow: 0.00625em 0.125em rgba(255, 255, 255, 0.233);
+}
+
+.comment-box .comment-head {
+    background: white;
+    padding: 0.625em 0.75em;
+    border-bottom: 0.0625em solid gray;
+    overflow: hidden;
+    box-shadow: 0.00625em 0.125em rgba(255, 255, 255, 0.233);
+}
+
+.comment-box .comment-head i {
+    float: right;
+    margin-left: 0.87em;
+    position: relative;
+    top: 0.125em;
+    color:rgb(20, 158, 182);
+    cursor: pointed;
+    transition: color 0,3s ease;
+
+}
+
+.comment-box .comment-head i:hover {
+    color:rgb(183, 206, 55)
+}
+
+.comments-box .coment-name {
+    color: rgb(201, 20, 20);
+    font-size: 0.875em;
+    /** font-weight= grosor de fuente*/
+    font-weight: 700;
+    float: left; 
+    margin-right: 0.625em;
+}
+
+.comments-box .comment-head span {
+    float: left;
+    color:rgb(20, 158, 182);
+    font-size: 0.8125em;
+    position: relative;
+    top: 0.0625em;
+}
+
+.comments-box .comment-content {
+    background: rgb(214, 199, 199);
+    padding: 0.75em;
+    border-radius: 0 0 0.25em 0.25em;
+    font-size: 0.93em;
+    color: #595959
+}
+
+
+/**===========
+Pie de pagina
+============*/
+  
+.boton {
+    background-color: rgb(203, 236, 15);
+    display: block;
+    padding: 0.8em 1em 2em 1em;
+    height: 2em;
+    width: 9em;
+    margin: 0.1em;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 1em;
+    border: 0.1em solid rgb(39, 36, 36);
+    margin: auto;
+}

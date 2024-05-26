@@ -1,0 +1,2 @@
+Etiqueta para iconos de fonts awesome.com
+<script src="https://kit.fontawesome.com/393b5378a2.js" crossorigin="anonymous"></script>

@@ -1,0 +1,50 @@
+body {
+    background-image: url(./fondo2.avif);
+    background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     background-size: cover;
+}
+
+
+.titulo {
+    color: rgb(183, 206, 55);
+    font-size: 5em;
+    font-family: 'Playfair';
+    font-stretch: normal;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.enunciados {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.formulario {
+    text-align: center;
+}
+
+a{
+    color: rgb(59, 20, 90);
+}
+
+a:hover {
+    color: rgb(20, 158, 182);
+}
+
+.boton {
+    background-color: rgb(203, 236, 15);
+    display: block;
+    padding: 0.8em 1em 2em 1em;
+    height: 2em;
+    width: 9em;
+    margin: 0.1em;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 1em;
+    border: 0.1em solid rgb(39, 36, 36);
+    margin: auto;
+}
